@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
-import { CheckBox, Button } from '..';
+import { CheckBox, Button } from '../..';
 import styles from './index.module.css';
-import { ADD_COLOR, DELETE, RESOLVE, WHITE_COLOR, DONE } from '../../constants';
+import { ADD_COLOR, DELETE, RESOLVE, WHITE_COLOR, DONE } from '../../../constants';
 
 const Todo = ({
   text,

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CheckBox, ColorDot, Button } from '..';
-import { CLEAR_FILTERS, FILTERS, MY_TASKS, RESOLVED, UNRESOLVED, COLORS } from '../../constants';
+import { CheckBox, ColorDot, Button } from '../..';
+import { CLEAR_FILTERS, FILTERS, MY_TASKS, RESOLVED, UNRESOLVED, COLORS } from '../../../constants';
 import styles from './index.module.css';
 
 const Filters = ({ setResolved, setUnresolved, setFilterColor, resolved, unresolved, dotColors }) => {

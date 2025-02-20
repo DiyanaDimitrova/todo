@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Menu from './index';
-import { RESOLVE_ALL, UNRESOLVE_ALL, REMOVE_ALL } from '../../constants';
+import { RESOLVE_ALL, UNRESOLVE_ALL, REMOVE_ALL } from '../../../constants';
 
 describe('Menu Component', () => {
   const mockResolveHandler = jest.fn();

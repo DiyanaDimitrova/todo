@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import { Button } from '..';
-import { ADD_COLOR, CLOSE, MODAL_ROOT } from '../../constants';
+import { Button } from '../..';
+import { ADD_COLOR, CLOSE, MODAL_ROOT } from '../../../constants';
 import styles from './index.module.css';
 
 const ModalHeader = ({ header }) => (

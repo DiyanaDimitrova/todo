@@ -1,6 +1,6 @@
 import React, { useMemo, useCallback } from 'react';
 import PropTypes from 'prop-types';
-import { Todo } from '..';
+import { Todo } from '../..';
 
 const Todos = ({
   todos = [],

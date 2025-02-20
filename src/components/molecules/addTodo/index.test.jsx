@@ -2,7 +2,7 @@ import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import AddTodo from './index';
-import { ADD_TODO } from '../../constants';
+import { ADD_TODO } from '../../../constants';
 
 describe('AddTodo Component', () => {
   const mockOnClick = jest.fn();

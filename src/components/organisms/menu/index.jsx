@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, AddTodo } from '..';
-import { RESOLVE_ALL, UNRESOLVE_ALL, REMOVE_ALL } from '../../constants';
+import { Button, AddTodo } from '../..';
+import { RESOLVE_ALL, UNRESOLVE_ALL, REMOVE_ALL } from '../../../constants';
 import styles from './index.module.css';
 
 const Menu = ({
