@@ -9,28 +9,27 @@ const initialState = {
 };
 
 export const getTodos = createAsyncThunk(
-  'getTodos',
+  'todos/getTodos',
   async (_, { rejectWithValue }) => {
     try {
-      const { data } = await axios(URL);
-      return data.slice(0, 10).map((todo) => {
-        return {
-          id: `${todo.id}-${todo.title}`,
-          title: todo.title,
-          isDone: false,
-          isResolved: false,
-          color: WHITE_COLOR,
-        };
-      });
+      const response = await axios.get(URL);
+      const data = response?.data ?? []; // Safely handle undefined data
+      return data.slice(0, 10).map(({ id, title }) => ({
+        id: `${id}-${title}`,
+        title,
+        isDone: false,
+        isResolved: false,
+        color: WHITE_COLOR,
+      }));
     } catch (err) {
-      rejectWithValue(err);
+      return rejectWithValue(err.message || ERROR_MESSAGE);
     }
   },
 );
 
 export const todoSlice = createSlice({
   initialState,
-  name: 'todo',
+  name: 'todos',
   reducers: {
     addTodo: (state, action) => {
       state.todos.push(action.payload);
@@ -62,14 +61,15 @@ export const todoSlice = createSlice({
     builder
       .addCase(getTodos.pending, (state) => {
         state.isLoading = true;
+        state.error = '';
       })
       .addCase(getTodos.fulfilled, (state, action) => {
         state.todos = action.payload;
         state.isLoading = false;
       })
-      .addCase(getTodos.rejected, (state) => {
+      .addCase(getTodos.rejected, (state, action) => {
         state.isLoading = false;
-        state.error = ERROR_MESSAGE;
+        state.error = action.payload || ERROR_MESSAGE;
       });
   },
 });

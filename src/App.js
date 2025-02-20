@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux';
-import Page from './page';
+import Page from './pages';
 import { store } from './redux/store';
 
 function App() {
