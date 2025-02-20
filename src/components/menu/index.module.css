@@ -1,0 +1,17 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  align-items: center;
+  padding: 20px;
+  padding-top: 50px;
+  background: rgb(238 243 243);
+  filter: drop-shadow(0 0 0.2rem rgb(193, 193, 193));
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  max-width: 100px;
+}

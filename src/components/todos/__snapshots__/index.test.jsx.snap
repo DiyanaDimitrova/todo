@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todos Component should match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="text"
+    >
+      delectus aut autem
+    </div>
+    <div
+      class="checkbox"
+    >
+      <div
+        class="checkBoxWrapper"
+      >
+        <label
+          class="label"
+          for="Resolve"
+        >
+          <input
+            checked=""
+            class="input"
+            id="Resolve"
+            type="checkbox"
+          />
+          <span>
+            Resolve
+          </span>
+        </label>
+      </div>
+      <div
+        class="done"
+      >
+        Done
+      </div>
+    </div>
+    <div
+      class="buttons"
+    >
+      <button
+        class="button"
+        type="button"
+      >
+        Add Color
+      </button>
+      <button
+        class="button"
+        type="button"
+      >
+        Delete
+      </button>
+    </div>
+  </div>
+  <div
+    class="container"
+  >
+    <div
+      class="text"
+    >
+      quis ut nam facilis et officia qui
+    </div>
+    <div
+      class="checkbox"
+    >
+      <div
+        class="checkBoxWrapper"
+      >
+        <label
+          class="label"
+          for="Resolve"
+        >
+          <input
+            class="input"
+            id="Resolve"
+            type="checkbox"
+          />
+          <span>
+            Resolve
+          </span>
+        </label>
+      </div>
+    </div>
+    <div
+      class="buttons"
+    >
+      <button
+        class="button"
+        type="button"
+      >
+        Add Color
+      </button>
+      <button
+        class="button"
+        type="button"
+      >
+        Delete
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

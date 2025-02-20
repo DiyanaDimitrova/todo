@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters Component should match snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <h2
+      class="title"
+    >
+      My Tasks
+    </h2>
+    <div
+      class="filters"
+    >
+      <h4>
+        Filters
+      </h4>
+      <button
+        class="button"
+        type="button"
+      >
+        Clear Filters
+      </button>
+    </div>
+    <div
+      class="filter"
+    >
+      <div
+        class="checkBoxWrapper"
+      >
+        <label
+          class="label"
+          for="Resolved"
+        >
+          <input
+            class="input"
+            id="Resolved"
+            type="checkbox"
+          />
+          <span>
+            Resolved
+          </span>
+        </label>
+      </div>
+      <div
+        class="checkBoxWrapper"
+      >
+        <label
+          class="label"
+          for="Unresolved"
+        >
+          <input
+            class="input"
+            id="Unresolved"
+            type="checkbox"
+          />
+          <span>
+            Unresolved
+          </span>
+        </label>
+      </div>
+    </div>
+    <div>
+      <h5>
+        Colors
+      </h5>
+      <div
+        class="colorFilter"
+      >
+        <div
+          class="color-dot"
+          data-testid="color-dot-#ff0000"
+          style="background-color: rgb(255, 0, 0);"
+        />
+        <div
+          class="color-dot"
+          data-testid="color-dot-#00ff00"
+          style="background-color: rgb(0, 255, 0);"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
